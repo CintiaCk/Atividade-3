@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Formulário</h1>
     <!-- FORM -->
     <form action="calcula.php" method="post" enctype = "multipart/form-data">
         <!-- NOME -->
@@ -18,7 +19,11 @@
 
         <!-- PRAZO -->
         <label for="prazo">Entregue fora do prazo?</label>
-        <input type="number" name="prazo" placeholder="Digite a quantidade de tarefas entregues fora do prazo">  
+        <input type="number" name="prazo" placeholder="Digite a quantidade de tarefas entregues fora do prazo">                                                                    <br><br>
+        
+        <!-- SETOR DO FUNCIONARIO -->
+        <label for="s_funcionario">acessar setor funcionário?</label>
+        <input type="checkbox" name="s_funcionario">                                                                                                                                              <br><br><br>
                             
         <!--BOTÃO-->
           

@@ -19,6 +19,9 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
         elseif($tarefa >= 10 && $tarefa < 19 && $prazo < 4){
             echo "Desempenho regular";
         }
+        elseif($tarefas > 25 || $prazo == 0){
+            echo "Funcionário elegivel para bônus";
+        }
         else{
             echo "Desempenho insatisfatório";
         }

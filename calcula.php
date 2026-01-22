@@ -13,7 +13,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
         
     }else{
         // CLASSIFICANDO DESEMPENHO
-        if($tarefa >= 20 || $prazo <= 1){
+        if($tarefa >= 20 || $prazo = 0){
             echo "Desempenho excelente";
         }
         elseif($tarefa >= 10 && $tarefa < 19 && $prazo < 4){

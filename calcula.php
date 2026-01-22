@@ -5,14 +5,14 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
     $nome = $_POST["nome"];
     $tarefa = $_POST["tarefa"];
     $prazo = $_POST["prazo"];
-    $setor = $_POST["setor_f"];
+    $setor_f = $_POST["setor_f"];
     
 
     // MENSAGEM
-    $exelente = "Olá $nome <br> Setor: $setor <br> Desempenho: Exelente";
-    $regular = "Olá $nome <br> Setor: $setor <br> Desempenho: Regular";
-    $bonus = "Olá $nome <br> Setor: $setor <br> Desempenho: Funcionário elegivel para bônus";
-    $insatisfatorio = "Olá $nome <br> Setor: $setor <br> Desempenho: Insatisfatório";
+    $exelente = "Olá $nome <br> Setor: $setor_f <br> Desempenho: Exelente";
+    $regular = "Olá $nome <br> Setor: $setor_f <br> Desempenho: Regular";
+    $bonus = "Olá $nome <br> Setor: $setor_f <br> Desempenho: Funcionário elegivel para bônus";
+    $insatisfatorio = "Olá $nome <br> Setor: $setor_f <br> Desempenho: Insatisfatório";
 
     // VERIFICANDO SE OS CAMPOS ESTAO PREENCHIDOS
     if($nome == "" || $tarefa == ""){

@@ -23,11 +23,11 @@
         
         <!-- SETOR DO FUNCIONARIO -->
         <label for="setor">Setor do funcionário:</label><br>
-        <input type="checkbox" name="setor_f" value="administrativo">
+        <input type="radio" name="setor_f" value="administrativo">
          <label for="setor">administrativo</label><br>
-        <input type="checkbox" name="setor_f" value="rh">
+        <input type="radio" name="setor_f" value="rh">
          <label for="setor">rh</label><br>
-        <input type="checkbox" name="setor_f" value="financeiro">
+        <input type="radio" name="setor_f" value="financeiro">
          <label for="setor">financeiro</label><br>
                         
         <!--BOTÃO-->

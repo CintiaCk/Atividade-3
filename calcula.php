@@ -5,7 +5,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
     $nome = $_POST["nome"];
     $tarefa = $_POST["tarefa"];
     $prazo = $_POST["prazo"];
-    $setor = $_POST["setor"];
+    $setor = $_POST["setor_f"];
     
 
     // MENSAGEM
@@ -21,13 +21,8 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
         
     }else{
         // CLASSIFICANDO DESEMPENHO
-<<<<<<< HEAD
-        if($tarefa >= 20 || $prazo <= 1){
-            echo $exelente;
-=======
         if($tarefa >= 20 || $prazo = 0){
-            echo "Desempenho excelente";
->>>>>>> ajuste-regra
+            echo $exelente;
         }
         elseif($tarefa >= 10 && $tarefa < 19 && $prazo < 4){
             echo $regular;

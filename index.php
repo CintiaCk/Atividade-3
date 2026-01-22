@@ -22,14 +22,17 @@
         <input type="number" name="prazo" placeholder="Digite a quantidade de tarefas entregues fora do prazo">                                                                    <br><br>
         
         <!-- SETOR DO FUNCIONARIO -->
-        <label for="s_funcionario">Setor do funcionário:</label>
-        <option value="">Selecione</option>                                                                                                                                              <br><br><br>
-        <option value="administrativo">administrativo</option>                    
-        <option value="rh">rh</option>                    
-        <option value="financeiro">financeiro</option>                    
+        <label for="setor">Setor do funcionário:</label><br>
+        <input type="checkbox" name="setor_f" value="administrativo">
+         <label for="setor">administrativo</label><br>
+        <input type="checkbox" name="setor_f" value="rh">
+         <label for="setor">rh</label><br>
+        <input type="checkbox" name="setor_f" value="financeiro">
+         <label for="setor">financeiro</label><br>
+                        
         <!--BOTÃO-->
           
-    <a href="<?php include_once("calcula.php");?>"><input type="submit" name = "enviar"> </a>
+    <button>Enviar<a href="<?php include_once("calcula.php");?>"></a></button>
 
     </form>
 </body>

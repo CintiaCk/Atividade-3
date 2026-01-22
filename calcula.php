@@ -5,6 +5,14 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
     $nome = $_POST["nome"];
     $tarefa = $_POST["tarefa"];
     $prazo = $_POST["prazo"];
+    $setor = $_POST["setor"];
+    
+
+    // MENSAGEM
+    $exelente = "Olá $nome <br> Setor: $setor <br> Desempenho: Exelente";
+    $regular = "Olá $nome <br> Setor: $setor <br> Desempenho: Regular";
+    $bonus = "Olá $nome <br> Setor: $setor <br> Desempenho: Funcionário elegivel para bônus";
+    $insatisfatorio = "Olá $nome <br> Setor: $setor <br> Desempenho: Insatisfatório";
 
     // VERIFICANDO SE OS CAMPOS ESTAO PREENCHIDOS
     if($nome == "" || $tarefa == ""){
@@ -14,16 +22,16 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
     }else{
         // CLASSIFICANDO DESEMPENHO
         if($tarefa >= 20 || $prazo <= 1){
-            echo "Desempenho excelente";
+            echo $exelente;
         }
         elseif($tarefa >= 10 && $tarefa < 19 && $prazo < 4){
-            echo "Desempenho regular";
+            echo $regular;
         }
         elseif($tarefas > 25 || $prazo == 0){
-            echo "Funcionário elegivel para bônus";
+            echo $bonus;
         }
         else{
-            echo "Desempenho insatisfatório";
+            echo $insatisfatorio;
         }
         
     }
